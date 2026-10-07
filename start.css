@@ -1,0 +1,144 @@
+body {
+    animation: apparition 0.5s ease;
+    padding-left: 230px;
+
+}
+
+body h1 {
+    color: rgb(227, 160, 4);
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 190px;
+    background-color: #0d5ea160;
+    padding: 1.5rem 1rem;
+    animation: navigation 1s ease-out;
+    backdrop-filter: blur(8px);
+    background-image: url("fondcolor.jpg");
+
+}
+
+nav a {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.25s ease,
+    box-shadow 0.25s ease; /*fluidité de l'animation*/
+}
+
+nav a:hover {
+  background-color: #1d4ed8;
+  transform: translateX(8px);
+  box-shadow: 0 5px 12px #00000040;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+@keyframes navigation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}   
+
+main {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: center;
+}
+
+.little {
+    background-image: url("grisatre.jpg");
+    background-position: right;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #000000;
+    padding: 1rem;
+    text-align: center;
+    background-image: url("grisatre.jpg");
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carte  {display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ background-color: #ffffff;
+ border: 5px solid #cfdbdf;
+ border-radius: 10rem;
+ padding: 1.25rem;
+ min-width: 0;
+ max-width: 64rem;
+ margin: 0 auto;
+ padding: 1rem;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding-left: 0;
+        padding-top: 125px;
+    }
+
+    header {
+        right: 0;
+        bottom: auto;
+        width: auto;
+        padding: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        width: auto;
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+} 

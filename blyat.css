@@ -1,0 +1,30 @@
+
+
+header h1 {
+    color: #0c3f08;
+    padding: 20px;
+    text-align: left;
+}
+
+header nav {
+    background-color: #032101;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    color: #0c3f08;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #032101;
+    color: #fffffe;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="blyat.css">
+        <link rel="icon" type="image/x-icon" href="3.ico">
+        <title>exo</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1><i>MQ E-sport club</i></h1>
+            <nav>
+            <h3> horraire de contacte :</h3> <p> Lundi au vendredi de 9h à 18h <br>
+                Samedi de 10h à 14h <br>
+                Dimanche fermé</p>
+            
+            
+            <h4>ADHERER A NOTRE DEVISE : BOMBOOOOOOCLAAAAAATTTTTTEEEEE</h4>
+            
+            </nav>
+        </header>
+
+        <main>
+        <h1>Formulaire de contact</h1>
+        <p>Veuillez remplir le formulaire ci-dessous pour nous contacter pour en savoir plus sur les concours e-sport :</p>
+
+        <section>
+            <p>Veuillez indiquez votre niveau de compétence en e-sport, votre expérience dans le domaine,<br>
+            ainsi que vos disponibilités pour participer aux concours. Nous vous répondrons dans les plus brefs délais.</p>
+
+            <h3> Niveau de compétence :</h3>
+            
+            <label>
+            <input type="radio" name="niveau" value="debutant">
+            Débutant
+            </label>
+
+            <label>
+            <input type="radio" name="niveau" value="intermediaire">
+            Intermédiaire
+            </label>
+
+            <label>
+            <input type="radio" name="niveau" value="avance">
+            Avancé
+            </label>
+
+            <label>
+            <input type="radio" name="niveau" value="gigachad">
+            Gigachad
+            </label>
+
+            <H3> Type de concours :</H3>
+
+            <label>
+            <input type="checkbox" name="concours" value="FPS">
+            FPS
+            </label>
+            <label>
+            <input type="checkbox" name="concours" value="MOBA">
+            MOBA
+            </label>
+            <label>
+            <input type="checkbox" name="concours" value="Battle Royale">
+            Battle Royale
+            </label>
+            <label>
+            <input type="checkbox" name="concours" value="Je suis au dessus de ça moi">
+            Je suis mon propre concours
+            </label>
+
+            <h3> Platforme de jeu :</h3>
+
+            <label>
+                <select name="platforme">
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo Switch">Nintendo Switch (non)</option>
+                </select>
+            </label>
+
+        
+            <form action="/submitCourseForm" method="post">
+
+            <ul><label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email">
+            </ul>
+            
+            <ul>
+            <label for="date de naissance">Date de naissance :</label>
+            <input type="date" id="date de naissance" name="date de naissance">
+
+            <label for="numéros de téléphone">Numéros de téléphone :</label>
+            <input type="tel" id="numéros de téléphone" name="numéros de téléphone" placeholder="Entrez votre numéro de téléphone">
+            </ul> 
+
+            <ul>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button> inscription au concours
+            </ul>
+
+            </form>
+    
+        </section>
+        </main>
+
+        <footer>
+            mail : <a href="mailto: https://www.mq-esport-club.com">
+            telephone : +786 396 53  94 63<br>
+            adresse : 67 antenne de baddies, 56323 la  voie de la sagesse
+            <p>© 2026 MQ E-sport club. Tous droits réservés.</p>
+        </footer>
+        
+    </body>
+    </html>

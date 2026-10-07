@@ -1,0 +1,78 @@
+body { background-color: #fefefe; }
+/* 1. Réglages généraux */
+* { box-sizing: border-box; }
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ font-size: 1rem;
+ line-height: 1.6;
+ color: #172b3a;
+ background-color: #f3f6f8;
+}
+body    h1 {
+ font-size: 2.2rem;
+ margin: 0;
+}
+body h2 {
+    color: #006b66;
+}
+a {
+ color: #006b66;
+ text-decoration: underline;
+}
+header {
+ background-color: #d9efea;
+ padding: 2rem;
+ text-align: center;
+}
+footer {
+ background-color: #526573;
+ padding: 1rem;
+ text-align: center;
+}
+.conteneur {
+ max-width: 64rem;
+ margin: 0 auto;
+ padding: 1rem;
+}
+.carte {
+ background-color: #ffffff;
+ border: 1px solid #cfdbdf;
+ border-radius: 0.75rem;
+ padding: 1.25rem;
+}
+.illustration {
+ display: block;
+ max-width: 36rem;
+ width: 100%;
+ height: auto;
+ margin: 0 auto 1.5rem;
+}
+.banniere {
+ min-height: 10rem;
+ margin-top: 1.5rem;
+ background-image: url("../../assets/images/atelier.svg");
+ background-size: cover;
+ background-position: center;
+}
+nav {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+}
+.cartes {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+.carte { min-width: 0; }
+@media (min-width: 48rem) {
+ .cartes { flex-direction: row; }
+ .ccarte .carte { flex: 1; }
+}
+a:hover { color: #004b47; }
+a:focus-visible {
+ outline: 3px solid #9c4300;
+ outline-offset: 3px;
+}

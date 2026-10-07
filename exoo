@@ -1,0 +1,27 @@
+salaire = 4000
+chf = int(input("chiffre d'affaire"))
+if chf < 30000:
+    salaire = 4000 + 5/100 * chf
+    print (f"le salaaire mensuel est de : {salaire}$")
+else:
+    salaire = 4000 + 10/100 * chf
+    print (f"le salaaire mensuel est de : {salaire}$")
+
+var chiffre_af, commission, salaire : int;
+Debut
+
+ecrire ("entrer le chiffre_af")
+
+salire <- 4000;
+
+debut si
+si chiffre_af < 30000;
+    salaire <- 4000 + 0.05 * chiffre_af
+fin si
+
+debut sinon
+sinon
+    salaire <- 4000 + 0.10 * chiffre_af
+fin sinon
+
+ecrire ("le salaaire mensuel est de :" salaire'$')
